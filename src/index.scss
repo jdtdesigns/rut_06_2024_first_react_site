@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html,  body {
+  height: 100%;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+// GLOBAL CLASSES
+.row, .column {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+// CUSTOM STYLES
+header {
+  padding: 10px 5%;
+  background: #555;
+  color: #eee;
+  margin-bottom: 25px;
+  nav {
+    a {
+      color: #eee;
+      &:not(:last-child) {
+        margin-right: 7px;
+      }
+      &.active, &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
