@@ -78,6 +78,15 @@ header {
   }
 }
 
+main {
+  padding: 0 5%;
+}
+
+footer {
+  padding: 25px 5%;
+}
+
+// Home Styles
 .home-hero {
   img {
     width: 50%;
@@ -89,13 +98,22 @@ header {
   }
 }
 
-main {
-  padding: 0 5%;
+section.work {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  color: #fff;
+  margin: 35px 0;
+
+  article.work-item {
+    padding: 15px;
+    background-size: cover;
+    p {
+      margin: 8px 0;
+    }
+  }
 }
 
-footer {
-  padding: 25px 5%;
-}
 
 // Contact Page Styles
 form.contact-form {
@@ -125,4 +143,9 @@ form.contact-form {
 .dino-image {
   width: 400px;
   margin-bottom: 20px;
+}
+
+// Footer styles
+footer.main-footer {
+  
 }
