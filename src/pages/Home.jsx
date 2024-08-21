@@ -1,7 +1,11 @@
 function Home() {
   return (
     <>
-      <h1>Home</h1>
+      <section className="home-hero column align-center">
+        <img src="/images/me.jpg" alt="" />
+
+        <h1 className="text-center">Dev and Designer</h1>
+      </section>
     </>
   )
 }

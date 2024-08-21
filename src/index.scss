@@ -1,17 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+$primaryColor: #85dcd1;
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
-html,  body {
+html,  body, #root {
   height: 100%;
 }
 
 a {
   color: #333;
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
 }
 
 // GLOBAL CLASSES
@@ -27,12 +39,24 @@ a {
   justify-content: space-between;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .align-center {
   align-items: center;
 }
 
+.flex-1 {
+  flex: 1;
+}
+
 .text-center {
   text-align: center;
+}
+
+.light-font {
+  font-weight: 300;
 }
 
 // CUSTOM STYLES
@@ -52,4 +76,53 @@ header {
       }
     }
   }
+}
+
+.home-hero {
+  img {
+    width: 50%;
+    margin-bottom: 15px;
+  }
+
+  h1 {
+    font-weight: 300;
+  }
+}
+
+main {
+  padding: 0 5%;
+}
+
+footer {
+  padding: 25px 5%;
+}
+
+// Contact Page Styles
+form.contact-form {
+  margin: 15px auto 0;
+  width: 450px;
+  > * {
+    padding: 6px 10px;
+    border: none;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    &:focus {
+      outline: 1px solid #1bd5da;
+    }
+  }
+
+  input, textarea {
+    border: 1px solid #ccc;
+  }
+
+  button {
+    background: #85dcd1;
+    color: #fff;
+  }
+}
+
+// 404 Page
+.dino-image {
+  width: 400px;
+  margin-bottom: 20px;
 }
