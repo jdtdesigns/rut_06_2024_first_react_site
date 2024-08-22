@@ -134,8 +134,14 @@ form.contact-form {
     }
   }
 
-  input, textarea {
+  label {
+    font-size: .85rem;
+    color: #555;
+  }
+
+  input, textarea, select {
     border: 1px solid #ccc;
+    color: #555;
   }
 
   button {
